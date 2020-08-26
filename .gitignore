@@ -10,3 +10,6 @@ dist/
 build/
 emscripten.*
 .cargo-ok
+landing/
+wrangler.toml
+wrangler.test

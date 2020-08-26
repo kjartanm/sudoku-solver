@@ -1,7 +1,8 @@
 name = "sudoku-solver"
 type = "webpack"
-account_id = "6fafc4e4a0ba1e07a6ffafeb135f8d21"
+account_id = 
 workers_dev = true
 route = ""
 zone_id = ""
 webpack_config = "webpack.config.js"
+ 
