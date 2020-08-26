@@ -1,7 +1,7 @@
 const CopyPlugin = require('copy-webpack-plugin')
 const path = require('path')
 const spawn = require('child_process').spawnSync
-
+let result = null;
 module.exports = {
   context: path.resolve(__dirname, '.'),
   devtool: 'nosources-source-map',
@@ -11,7 +11,7 @@ module.exports = {
     {
       apply: compiler => {
         compiler.hooks.compilation.tap('emscripten-build', compilation => {
-          let result = spawn('node', ['build.js'], { stdio: 'inherit' })
+          if(!result )result = spawn('node', ['build.js'], { stdio: 'inherit' })
 
           if (result.status != 0) {
             compilation.errors.push('emscripten build failed')
