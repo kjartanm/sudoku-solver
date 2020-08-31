@@ -11,7 +11,7 @@ $.mkdir('-p', 'build')
 $.exec(
   `docker run --rm -v $(pwd):/src emscripten/emsdk \
    emcc \
-   -O2 \
+   -O3 \
    --bind \
    --no-entry \
    -s EXTRA_EXPORTED_RUNTIME_METHODS='["getValue"]' \

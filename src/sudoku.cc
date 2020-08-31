@@ -96,7 +96,7 @@ namespace operations_research
         
         DecisionBuilder *db = solver.MakePhase(grid_flat, solver.INT_VAR_SIMPLE, solver.INT_VALUE_SIMPLE);
         solver.NewSearch(db);
-        while (solver.NextSolution())
+        if (solver.NextSolution())
         {
             for (int i = 0; i < n; i++)
             {
@@ -112,7 +112,6 @@ namespace operations_research
 
 int solve(int sudoko_ptr)
 {
-    FLAGS_logtostderr = 0;
     int *sudoku_flat = (int *)sudoko_ptr;
     operations_research::solve(sudoku_flat);
     return EXIT_SUCCESS;

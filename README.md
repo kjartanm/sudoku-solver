@@ -1,4 +1,17 @@
-# 👷 `worker-emscripten-template`
+# Sudoku Solver
+Sudoku Solver is a proof of concept-app on how to leverage WebAssembly in combination with existing C++ libraries.
+
+The application consists of a serverless endpoint that basically is a front for a small WebAssembly application that does the actual solving.
+
+The solving is based of functionality from the OR-Tools library (https://developers.google.com/optimization) that has been compiled into WASM.
+
+See https://github.com/kjartanm/wasm-or-tools
+
+It uses Cloudflare Workers and is based on `worker-emscripten-template`
+
+---
+
+## 👷 `worker-emscripten-template`
 
 A template for kick starting a Cloudflare worker project with emscripten
 
