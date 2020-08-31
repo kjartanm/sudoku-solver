@@ -1,11 +1,13 @@
 # Sudoku Solver
 Sudoku Solver is a proof of concept-app on how to leverage WebAssembly in combination with existing C++ libraries.
 
-The application consists of a serverless endpoint that basically is a front for a small WebAssembly application that does the actual solving.
+The application consists of a serverless endpoint that basically is a front for a small WebAssembly application that does the actual solving. 
 
-The solving is based of functionality from the OR-Tools library (https://developers.google.com/optimization) that has been compiled into WASM.
+The solving is based of functionality from the OR-Tools library (https://developers.google.com/optimization) that has been compiled into WASM. 
 
 See https://github.com/kjartanm/wasm-or-tools
+
+The C++ app is based on one of the contributed examples in the OR-Tools repo: https://github.com/google/or-tools/blob/stable/examples/contrib/Sudoku.java
 
 In addition it has an endpoint with a small web-application that uses the serverless endpoint.
 
