@@ -7,6 +7,10 @@ The solving is based of functionality from the OR-Tools library (https://develop
 
 See https://github.com/kjartanm/wasm-or-tools
 
+In addition it has an endpoint with a small web-application that uses the serverless endpoint.
+
+Demo: https://sudoku-solver.krmuller.workers.dev/
+
 It uses Cloudflare Workers and is based on `worker-emscripten-template`
 
 ---
