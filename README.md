@@ -42,9 +42,3 @@ To demo you can use [`wrangler dev`](https://developers.cloudflare.com/workers/t
 $ wrangler dev
 👂 Listening on http://localhost:8787
 ```
-
-```console
-$ curl http://localhost:8787/600*400.jpg?width=100
-```
-
-Shoutout to [Surma](https://twitter.com/dassurma) for his [webpack-emscripten-wasm](https://gist.github.com/surma/b2705b6cca29357ebea1c9e6e15684cc) gist that was instrumental in getting this working!
